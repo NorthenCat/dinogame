@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0; 
+}
+
+body{
+  background: url("../img/bg.png");
+  background-size: cover;
+}
+
+h1{
+  font-size: 60px;
+  text-align: center;
+  font-family: fantasy;
+  margin-top: 35px;
+}
+h2{
+  font-size: 30px;
+  text-align: center;
+  font-family: fantasy;
+}
+
+#game {
+  width: 1000px;
+  height: 500px;
+  margin-top: 50px;
+  margin-left: 200px;
+  position: center;
+}
+
+#char {
+  width: 60px;
+  height: 80px;
+  background: url("../img/char.png");
+  background-size: 100%;
+  position: relative;
+  left: 20px;
+  top: 420px;
+}
+
+.animate {
+  animation: jump 550ms;
+}
+
+#block {
+  width: 100px;
+  height: 60px;
+  background: url("../img/block.png");
+  background-size: 150%;
+  position: relative;
+  top: 340px;
+  left: 960px;
+  animation: block 1s infinite linear;
+}
+
+@keyframes jump {
+  0%{top : 420px}
+  30%{top : 320px}
+  70%{top : 320px}
+  100%{top : 420px}
+}
+
+@keyframes block {
+  0%{left : 960px}
+  100%{left : -500px}
+}
